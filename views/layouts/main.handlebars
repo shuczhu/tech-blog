@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Review</title>
+  <link rel="stylesheet" href="/css/jass.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <h1 class="title">TECH REVIEW</h1>
+    <nav>
+        <ul>
+            <a href="/"><li class="home-button">HOME</li></a>
+            <a href="/profile"><li class="dash-button">DASHBOARD</li></a>
+            {{#if logged_in}}
+            <li class="log-button" id="logout">LOGOUT</li>
+            {{else}}
+            <a href="/login"><li class="log-button">LOGIN</li></a>
+            {{/if}}
+        </ul>
+    </nav>
+    <main>
+      {{{ body }}}
+    </main>
+
+
+
+  <!-- Render script for logged in users only -->
+  {{#if logged_in}}
+  <script src="/script/logout.js"></script>
+  {{/if}}
+</body>
+
+</html>

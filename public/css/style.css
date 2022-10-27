@@ -1,0 +1,116 @@
+h1 {
+    font-size:xxx-large;
+    width: 100%;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    border-bottom: solid black 1px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+}
+
+nav ul li {
+    list-style: none;
+    max-width: 30%;
+    flex-wrap: wrap;
+
+}
+
+.card-container {
+    width: 80%;
+    justify-content: center;
+    border-bottom: 1px dotted grey;
+    padding: 20px;
+    margin-left: 10%;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visted {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.login-container {
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.login-left {
+    padding: 30px;
+    border-right: black solid 1px;
+}
+
+.signup-right {
+    padding: 30px;
+    
+}
+
+.post-container, .comment-container, .comment-input-container, .post-input-container  {
+    width: 80%;
+    display: block;
+    justify-content: center;
+    padding-left: 10%;
+}
+
+.post-container h1 {
+    border-bottom: dotted 0.5px black;
+}
+.post-card-title {
+    width: 100%;
+}
+
+.post-card-data {
+    width: 100%;
+}
+
+.post-card-body {
+    width: 100%;
+    padding-bottom: 50px;
+    border-bottom: dotted 0.5px black;
+}
+
+.comment-input-container {
+    padding-top: 50px;
+    width: 100%;
+}
+
+.comment-container {
+    border-top: 0.5px dotted black;
+    border-bottom: 0.5px dotted black; 
+    margin-left: 10%;
+    padding-left: 0;
+}
+
+.post-box {
+    text-align: center;
+}
+
+#post-title-input {
+    width: 100%;
+    min-height: 20px;
+}
+#post-input {
+    min-height: 200px;
+    width: 100%;
+}
